@@ -6,13 +6,13 @@ Research on Animal Crossing: New Horizons design pattern data.
 I noticed when using [NHSE](https://github.com/kwsch/NHSE) and different design editors that under certain conditions, importing pattern files (`.nhd` or `.acnh`) did not seem to set the patterns as owned by the player and thus they were not editable in-game, much like if they were QR codes or from the pattern exchange.  
 I also noticed that for some pattern slots, the previous pattern name would remain in place of the imported one and both issues bugged me.
 
-So, [I forked NHSE](https://github.com/lottehime/NHSE), grabbed some dumped patterns and dat files then spent some time and hacked together a fix and added it to my fork, which was successfully merged into the main repo (yay!🥳)... and I will continue to submit finds and fun features to NHSE as it is the best thing out there for goofing with ACNH! 🏝️🤓
+So, [I forked NHSE](https://github.com/vectorcmdr/NHSE), grabbed some dumped patterns and dat files then spent some time and hacked together a fix and added it to my fork, which was successfully merged into the main repo (yay!🥳)... and I will continue to submit finds and fun features to NHSE as it is the best thing out there for goofing with ACNH! 🏝️🤓
 
 Some details are common enough knowledge that they are incorporated into code bases, some aren't (such as the fix), but there doesn't seem to be a consolidated spot for the information.  
 As a result of looking into it, I was also motivated to document the details and to create some tools to rip, host, convert and catalog design pattern files.
 
 
-You can find technical detail in the below writeup and/or check out my [ACNH Pattern Dump Index](https://github.com/lottehime/ACNH-Pattern-Dump-Index) repo (WIP!👷).
+You can find technical detail in the below writeup and/or check out my [ACNH Pattern Dump Index](https://github.com/vectorcmdr/ACNH-Pattern-Dump-Index) repo (WIP!👷).
 
 ---
 
@@ -22,7 +22,7 @@ You can find technical detail in the below writeup and/or check out my [ACNH Pat
 If any of this has been helpful, please consider caffeinating me further ☕  
 Thanks!
 
-<a href="https://www.buymeacoffee.com/lottehime" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+<a href="https://www.buymeacoffee.com/vectorcmdr" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
 ---
 
@@ -457,7 +457,7 @@ From `0x09` -> `0x0E` of each offset is unused data.
 
 An example for converting from an ACNH to an ACNL format in C# style pseudocode is as follows:
 
-https://github.com/lottehime/ACNH-Pattern-Research/blob/fd08e9c1904686fe5b1b14a6f77c5689cca2e177/acnl_convert_csharp_pseudo.cs#L1-L203
+https://github.com/vectorcmdr/ACNH-Pattern-Research/blob/fd08e9c1904686fe5b1b14a6f77c5689cca2e177/acnl_convert_csharp_pseudo.cs#L1-L203
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
